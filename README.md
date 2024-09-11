@@ -18,7 +18,7 @@ postman collection added
 TODO:
 -tests
 -roles
--calculation of timeslot can be a diffrent service with some model to calculate better
+-calculation of timeslot can be a diffrent service with some model to calculate better and cache to prevent holidays call on same country and time
 -sad flow exceptions and return values
 -bug fixing
 -api working with id and not objects
