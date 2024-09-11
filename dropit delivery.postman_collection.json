@@ -1,0 +1,1015 @@
+{
+	"info": {
+		"_postman_id": "57e5ecee-b66d-4471-868a-3acaf1cdf356",
+		"name": "dropit delivery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4744664"
+	},
+	"item": [
+		{
+			"name": "address",
+			"item": [
+				{
+					"name": "resolveAddress",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"searchTerm\": \"790 26th Ave SW, Puyallup, WA 98373, USA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/address/resolve-address",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"address",
+								"resolve-address"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAddressById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/address/754054b9-d0bc-492c-94ff-965be330682e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"address",
+								"754054b9-d0bc-492c-94ff-965be330682e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createAddress",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"d5e39624-2670-4aa4-b965-08ca9d30e8a8\",\r\n    \"version\": 1,\r\n    \"createdAt\": \"2024-09-09T13:13:40.883+00:00\",\r\n    \"updatedAt\": \"2024-09-09T13:13:40.883+00:00\",\r\n    \"country\": \"Canada\",\r\n    \"state\": \"Ontario\",\r\n    \"streetName\": \"St George Street\",\r\n    \"city\": \"Toronto\",\r\n    \"postalCode\": \"M8Z 3Y7\",\r\n    \"houseNumber\": 47,\r\n    \"addressLine1\": \"47 St George Street\",\r\n    \"addressLine2\": \"Toronto, ON M8Z 3Y7, Canada\",\r\n    \"latitude\": \"43.6168933\",\r\n    \"longitude\": \"-79.50384537142857\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/address/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"address",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateAddress",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"d5e39624-2670-4aa4-b965-08ca9d30e8a8\",\r\n    \"version\": 1,\r\n    \"createdAt\": \"2024-09-09T13:13:40.883+00:00\",\r\n    \"updatedAt\": \"2024-09-09T13:13:40.883+00:00\",\r\n    \"country\": \"Canada\",\r\n    \"state\": \"Ontario\",\r\n    \"streetName\": \"St George Street\",\r\n    \"city\": \"Toronto\",\r\n    \"postalCode\": \"M8Z 3Y7\",\r\n    \"houseNumber\": 47,\r\n    \"addressLine1\": \"47 St George Street\",\r\n    \"addressLine2\": \"Toronto, ON M8Z 3Y7, Canada\",\r\n    \"latitude\": \"43.6168933\",\r\n    \"longitude\": \"-79.50384537142857\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/address/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"address",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAddressById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/address/5a1fb168-0f53-4b05-ab78-f936661525c8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"address",
+								"5a1fb168-0f53-4b05-ab78-f936661525c8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "timeslot",
+			"item": [
+				{
+					"name": "getholidayies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/timeslot/holidays/cd4c6f0a-2606-44d4-8905-10cf897a3836",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"timeslot",
+								"holidays",
+								"cd4c6f0a-2606-44d4-8905-10cf897a3836"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getalltimeslots",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/timeslot/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"timeslot",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "gettimeslotbyid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/timeslot/cd4c6f0a-2606-44d4-8905-10cf897a7654",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"timeslot",
+								"cd4c6f0a-2606-44d4-8905-10cf897a7654"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createTimeslot",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"cd4c6f0a-2606-44d4-8905-10cf897a7654\",\r\n    \"version\": 1,\r\n    \"createdAt\": \"2024-09-09T15:32:19.819+00:00\",\r\n    \"updatedAt\": \"2024-09-09T15:32:19.819+00:00\",\r\n    \"dropoffAddress\": null,\r\n    \"startTime\": \"2024-09-10T05:00:00.000+00:00\",\r\n    \"endTime\": \"2024-09-10T07:00:00.000+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/timeslot/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"timeslot",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateTimeslot",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"cd4c6f0a-2606-44d4-8905-10cf897a7654\",\r\n    \"version\": 1,\r\n    \"createdAt\": \"2024-09-09T15:32:19.819+00:00\",\r\n    \"updatedAt\": \"2024-09-09T15:32:19.819+00:00\",\r\n    \"dropoffAddress\": null,\r\n    \"startTime\": \"2024-09-10T05:00:00.000+00:00\",\r\n    \"endTime\": \"2024-09-10T07:00:00.000+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/timeslot/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"timeslot",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteTimeslotById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/timeslot/cd4c6f0a-2606-44d4-8905-10cf897a7654",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"timeslot",
+								"cd4c6f0a-2606-44d4-8905-10cf897a7654"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTimeslotsByAddress",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"a87389bc-f552-4a09-8d3c-f9bcff274037\",\r\n    \"version\": 1,\r\n    \"createdAt\": \"2024-09-10T17:52:37.9323247\",\r\n    \"updatedAt\": \"2024-09-10T17:52:37.9323247\",\r\n    \"country\": \"United States\",\r\n    \"countryCode\": \"us\",\r\n    \"state\": \"Washington\",\r\n    \"streetName\": \"26th Avenue Southwest\",\r\n    \"city\": \"Puyallup\",\r\n    \"postalCode\": \"98373\",\r\n    \"houseNumber\": 790,\r\n    \"addressLine1\": \"790 26th Avenue Southwest\",\r\n    \"addressLine2\": \"Puyallup, WA 98373, United States of America\",\r\n    \"latitude\": \"47.16659969811321\",\r\n    \"longitude\": \"-122.30322150943397\",\r\n    \"timezone\": \"-08:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/timeslot/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"timeslot",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTimeslotsByAddressId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/timeslot/timeslots/754054b9-d0bc-492c-94ff-965be330682e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"timeslot",
+								"timeslots",
+								"754054b9-d0bc-492c-94ff-965be330682e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "courier",
+			"item": [
+				{
+					"name": "getallCouriers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/courier/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"courier",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "gettimeCourierById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/courier/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"courier",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createCourier",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"d5e39624-2670-4aa4-b965-08ca9d30e8a8\",\r\n    \"version\": 1,\r\n    \"createdAt\": \"2024-09-09T13:13:40.883+00:00\",\r\n    \"updatedAt\": \"2024-09-09T13:13:40.883+00:00\",\r\n    \"country\": \"Canada\",\r\n    \"state\": \"Ontario\",\r\n    \"streetName\": \"St George Street\",\r\n    \"city\": \"Toronto\",\r\n    \"postalCode\": \"M8Z 3Y7\",\r\n    \"houseNumber\": 47,\r\n    \"addressLine1\": \"47 St George Street\",\r\n    \"addressLine2\": \"Toronto, ON M8Z 3Y7, Canada\",\r\n    \"latitude\": \"43.6168933\",\r\n    \"longitude\": \"-79.50384537142857\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/courier/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"courier",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCourier",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"d5e39624-2670-4aa4-b965-08ca9d30e8a8\",\r\n    \"version\": 1,\r\n    \"createdAt\": \"2024-09-09T13:13:40.883+00:00\",\r\n    \"updatedAt\": \"2024-09-09T13:13:40.883+00:00\",\r\n    \"country\": \"Canada\",\r\n    \"state\": \"Ontario\",\r\n    \"streetName\": \"St George Street\",\r\n    \"city\": \"Toronto\",\r\n    \"postalCode\": \"M8Z 3Y7\",\r\n    \"houseNumber\": 47,\r\n    \"addressLine1\": \"47 St George Street\",\r\n    \"addressLine2\": \"Toronto, ON M8Z 3Y7, Canada\",\r\n    \"latitude\": \"43.6168933\",\r\n    \"longitude\": \"-79.50384537142857\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/courier/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"courier",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCourierById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/courier/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"courier",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "getallUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUserById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/user/8cd24591-0417-4e3b-877a-c9169fd3636b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"8cd24591-0417-4e3b-877a-c9169fd3636b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"me\",\r\n        \"surname\": \"me\",\r\n        \"phoneNumber\": \"123456789\",\r\n        \"email\": \"me@meme.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"d5e39624-2670-4aa4-b965-08ca9d30e8a8\",\r\n    \"version\": 1,\r\n    \"createdAt\": \"2024-09-09T13:13:40.883+00:00\",\r\n    \"updatedAt\": \"2024-09-09T13:13:40.883+00:00\",\r\n    \"country\": \"Canada\",\r\n    \"state\": \"Ontario\",\r\n    \"streetName\": \"St George Street\",\r\n    \"city\": \"Toronto\",\r\n    \"postalCode\": \"M8Z 3Y7\",\r\n    \"houseNumber\": 47,\r\n    \"addressLine1\": \"47 St George Street\",\r\n    \"addressLine2\": \"Toronto, ON M8Z 3Y7, Canada\",\r\n    \"latitude\": \"43.6168933\",\r\n    \"longitude\": \"-79.50384537142857\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUserAddress",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/user/update/8cd24591-0417-4e3b-877a-c9169fd3636b/address/754054b9-d0bc-492c-94ff-965be330682e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"update",
+								"8cd24591-0417-4e3b-877a-c9169fd3636b",
+								"address",
+								"754054b9-d0bc-492c-94ff-965be330682e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUserById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "delivery",
+			"item": [
+				{
+					"name": "getallDelivieries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/deliveries/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deliveries",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getallDailyDelivieries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/deliveries/daily",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deliveries",
+								"daily"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getallweeklyDelivieries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/deliveries/weekly",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deliveries",
+								"weekly"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDeliveryById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/deliveries/0520f09f-c416-4018-911b-5d1bfb7d9797",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deliveries",
+								"0520f09f-c416-4018-911b-5d1bfb7d9797"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createDelivery",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"d5e39624-2670-4aa4-b965-08ca9d30e8a8\",\r\n    \"version\": 1,\r\n    \"createdAt\": \"2024-09-09T13:13:40.883+00:00\",\r\n    \"updatedAt\": \"2024-09-09T13:13:40.883+00:00\",\r\n    \"country\": \"Canada\",\r\n    \"state\": \"Ontario\",\r\n    \"streetName\": \"St George Street\",\r\n    \"city\": \"Toronto\",\r\n    \"postalCode\": \"M8Z 3Y7\",\r\n    \"houseNumber\": 47,\r\n    \"addressLine1\": \"47 St George Street\",\r\n    \"addressLine2\": \"Toronto, ON M8Z 3Y7, Canada\",\r\n    \"latitude\": \"43.6168933\",\r\n    \"longitude\": \"-79.50384537142857\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/deliveries/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deliveries",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateDelivery",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"d5e39624-2670-4aa4-b965-08ca9d30e8a8\",\r\n    \"version\": 1,\r\n    \"createdAt\": \"2024-09-09T13:13:40.883+00:00\",\r\n    \"updatedAt\": \"2024-09-09T13:13:40.883+00:00\",\r\n    \"country\": \"Canada\",\r\n    \"state\": \"Ontario\",\r\n    \"streetName\": \"St George Street\",\r\n    \"city\": \"Toronto\",\r\n    \"postalCode\": \"M8Z 3Y7\",\r\n    \"houseNumber\": 47,\r\n    \"addressLine1\": \"47 St George Street\",\r\n    \"addressLine2\": \"Toronto, ON M8Z 3Y7, Canada\",\r\n    \"latitude\": \"43.6168933\",\r\n    \"longitude\": \"-79.50384537142857\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/deliveries/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deliveries",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteDeliveryById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/deliveries/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deliveries",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "setDemo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/deliveries/setdemo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deliveries",
+								"setdemo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "assambleDelivery",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": {\r\n    \"id\": \"8cd24591-0417-4e3b-877a-c9169fd3636b\",\r\n    \"version\": 1,\r\n    \"createdAt\": \"2024-09-10T19:09:14.946413\",\r\n    \"updatedAt\": \"2024-09-10T19:10:03.802485\",\r\n    \"name\": \"me\",\r\n    \"surname\": \"me\",\r\n    \"phoneNumber\": \"123456789\",\r\n    \"email\": \"me@meme.com\",\r\n    \"address\": {\r\n        \"id\": \"754054b9-d0bc-492c-94ff-965be330682e\",\r\n        \"version\": 1,\r\n        \"createdAt\": \"2024-09-10T19:09:38.712049\",\r\n        \"updatedAt\": \"2024-09-10T19:09:38.712049\",\r\n        \"country\": \"United States\",\r\n        \"countryCode\": \"us\",\r\n        \"state\": \"Washington\",\r\n        \"streetName\": \"26th Avenue Southwest\",\r\n        \"city\": \"Puyallup\",\r\n        \"postalCode\": \"98373\",\r\n        \"houseNumber\": 790,\r\n        \"addressLine1\": \"790 26th Avenue Southwest\",\r\n        \"addressLine2\": \"Puyallup, WA 98373, United States of America\",\r\n        \"latitude\": \"47.16659969811321\",\r\n        \"longitude\": \"-122.30322150943397\",\r\n        \"timezone\": \"-08:00\"\r\n    }\r\n    },\r\n    \"timeslotId\": \"c0fa5765-61b6-40ee-90f5-b34d79b1dbb5\",\r\n    \"addressId\": \"754054b9-d0bc-492c-94ff-965be330682e\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/deliveries/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deliveries",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateDeliveryStatusToStart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/deliveries/0520f09f-c416-4018-911b-5d1bfb7d9797/start",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deliveries",
+								"0520f09f-c416-4018-911b-5d1bfb7d9797",
+								"start"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateDeliveryStatusToCancel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/deliveries/0520f09f-c416-4018-911b-5d1bfb7d9797/cancel",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deliveries",
+								"0520f09f-c416-4018-911b-5d1bfb7d9797",
+								"cancel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateDeliveryStatusToComplete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/deliveries/0520f09f-c416-4018-911b-5d1bfb7d9797/complete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deliveries",
+								"0520f09f-c416-4018-911b-5d1bfb7d9797",
+								"complete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "geoapify",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.geoapify.com/v1/geocode/search?text=38%20Upper%20Montagu%20Street%2C%20Westminster%20W1H%201LJ%2C%20United%20Kingdom&apiKey=dff76341a7b241f1a2b42944eef352a1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"geoapify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"geocode",
+						"search"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "38%20Upper%20Montagu%20Street%2C%20Westminster%20W1H%201LJ%2C%20United%20Kingdom"
+						},
+						{
+							"key": "apiKey",
+							"value": "dff76341a7b241f1a2b42944eef352a1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://holidayapi.com/v1/holidays",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "country",
+							"value": "IL",
+							"type": "text"
+						},
+						{
+							"key": "year",
+							"value": "2023",
+							"type": "text"
+						},
+						{
+							"key": "pretty",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "key",
+							"value": "6136adcc-69e0-46ca-99ab-9de039a41a12",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://holidayapi.com/v1/holidays?country=IL&year=2024&pretty&key=6136adcc-69e0-46ca-99ab-9de039a41a12",
+					"protocol": "https",
+					"host": [
+						"holidayapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"holidays"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "IL"
+						},
+						{
+							"key": "year",
+							"value": "2024"
+						},
+						{
+							"key": "pretty",
+							"value": null
+						},
+						{
+							"key": "key",
+							"value": "6136adcc-69e0-46ca-99ab-9de039a41a12"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl -G -d country=\"IL\" -d year=\"2023\" -d pretty\n-d key=\"6136adcc-69e0-46ca-99ab-9de039a41a12\" \"https://holidayapi.com/v1/holidays\""
+			},
+			"response": []
+		}
+	]
+}
