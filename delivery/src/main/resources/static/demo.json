@@ -1,0 +1,3 @@
+[{"name":"a", "surname": "A", "phoneNumber": "050-1234567", "email": "a.A@deliveryco.com", "address": "808 26th Ave SW, Puyallup, WA 98373, USA", "timeslots": [{"t": 1}, {"t": 3}, {"t": 5}]},
+  {"name":"b", "surname": "B", "phoneNumber": "050-1234568", "email": "b.B@deliveryco.com", "address": "1313 131st St E, Tacoma, WA 98445, USA", "timeslots": [{"t": 1}, {"t": 2}, {"t": 6}, {"t": 7}]},
+  {"name":"c", "surname": "C", "phoneNumber": "050-1234569", "email": "c.C@deliveryco.com", "address": "808 26th Ave SW, Puyallup, WA 98373, USA", "timeslots": [{"t": 2}, {"t": 4}, {"t": 6}]}]
